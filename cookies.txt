@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+fiveelementslife.wixsite.com	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1787013297|6JdxS56p0Vxm
+fiveelementslife.wixsite.com	TRUE	/	FALSE	1999999999	__cf_bm	djoGmvSWq_OqyjuBvlJw2P2RKbUHUEd_teAKWf5AEAc-1787013297.5014143-1.0.1.1-0sKdr9pGCcgo4D.5MtMhfSDsXHS2cWNdgzFZYt9C_WM6iseHjLogmXniGSdLgZ8opwLU2qxkjXOGlSZmBFmzJjXKQvC0DmO7Z1.63jJJ.YBKBMxAsBpLHaHTTvzCOj2k
+fiveelementslife.wixsite.com	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=miss#varnish=miss#dc#desc=virginia-phy
+fiveelementslife.wixsite.com	TRUE	/	FALSE	1999999999	sec-fetch-unsupported	1
+fiveelementslife.wixsite.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

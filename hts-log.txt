@@ -1,0 +1,50 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 17 Aug 2026 20:34:57 at https://fiveelementslife.wixsite.com/start +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://fiveelementslife.wixsite.com/start -O1 "D:\app\wix transfer out" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:35:17	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/ (from https://fiveelementslife.wixsite.com/start)
+20:35:17	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/O,location.href (from https://fiveelementslife.wixsite.com/start)
+20:35:17	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/e (from https://fiveelementslife.wixsite.com/start)
+20:35:17	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/t (from https://fiveelementslife.wixsite.com/start)
+20:35:17	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/href%2C-location.href (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/${s.uri} (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Forbidden" (403) at link https://fiveelementslife.wixsite.com/window.location.href (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/api/ (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/envelope/ (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/sitemap.xml (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/feed.xml (from https://fiveelementslife.wixsite.com/start)
+20:35:40	Error: 	"Bad Request" (400) at link https://fiveelementslife.wixsite.com/start/O,location.href (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/e (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:40	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/t (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Bad Request" (400) at link https://fiveelementslife.wixsite.com/start/href%2C-location.href (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Bad Request" (400) at link https://fiveelementslife.wixsite.com/start/${s.uri} (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Forbidden" (403) at link https://fiveelementslife.wixsite.com/start/window.location.href (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Bad Request" (400) at link https://fiveelementslife.wixsite.com/start/robots.txt (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/sitemap.xml (from https://fiveelementslife.wixsite.com/start/menu)
+20:35:41	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/feed.xml (from https://fiveelementslife.wixsite.com/start/menu)
+20:36:09	Error: 	"Bad Request" (400) at link https://fiveelementslife.wixsite.com/start/a,location.href (from https://fiveelementslife.wixsite.com/start/menu?menu=five-elements-menu)
+20:36:09	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/O,location.href (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:09	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/e (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:09	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/href%2C-location.href (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/${s.uri} (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Forbidden" (403) at link https://fiveelementslife.wixsite.com/start/post/window.location.href (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/robots.txt (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/sitemap.xml (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/post/feed.xml (from https://fiveelementslife.wixsite.com/start/post/exploring-eastern-diet-principles-for-modern-wellness)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/O,location.href (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/e (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/t (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:29	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/a,location.href (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/${s.uri} (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Forbidden" (403) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/window.location.href (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/robots.txt (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/sitemap.xml (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/feed.xml (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile)
+20:36:33	Error: 	"Not Found" (404) at link https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/href%2C-location.href (from https://fiveelementslife.wixsite.com/start/profile/bekah-wang20238536/profile?disableScrollToTop=true)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 36 seconds : 121 links scanned, 81 files written (22762050 bytes overall) [10147044 bytes received at 105698 bytes/sec], 37764090 bytes transferred using HTTP compression in 90 files, ratio 22%, 2.6 requests per connection
+(39 errors, 0 warnings, 0 messages)
