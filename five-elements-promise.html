@@ -845,6 +845,18 @@
 }
 </style>
 
+<style id="vercel-header-gap-fix">
+/* The "This website was built on Wix" promo banner (deleted) used to reserve
+   50px above the sticky header via --wix-ads-height/--sticky-offset/--wix-ads-top-height.
+   With the banner gone, zero those out so the header sits flush at the top
+   instead of floating with an empty gap above it. */
+:root {
+    --wix-ads-height: 0px !important;
+    --sticky-offset: 0px !important;
+    --wix-ads-top-height: 0px !important;
+}
+</style>
+
 </head>
 <body class='' >
 <script type="text/javascript">
