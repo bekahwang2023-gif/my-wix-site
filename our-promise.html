@@ -843,6 +843,12 @@
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Wix's header-nav JS sets an inline visibility:hidden during a "prewarmup"
+   phase and is supposed to remove it once ready. That JS is unreliable here,
+   so the nav can get stuck hidden. Force it visible regardless. */
+.hidden-during-prewarmup {
+    visibility: visible !important;
+}
 </style>
 
 <style id="vercel-header-gap-fix">

@@ -865,6 +865,23 @@
 }
 </style>
 
+<style id="vercel-animation-fix">
+/* Wix's scroll-reveal JS (data-motion-enter="done") never fires on Vercel,
+   leaving elements paused at the motion-floatIn 0% keyframe (opacity:0) forever.
+   Force them visible regardless of that attribute. */
+[id^="comp-"]:not([data-motion-enter="done"]) {
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Wix's header-nav JS sets an inline visibility:hidden during a "prewarmup"
+   phase and is supposed to remove it once ready. That JS is unreliable here,
+   so the nav can get stuck hidden. Force it visible regardless. */
+.hidden-during-prewarmup {
+    visibility: visible !important;
+}
+</style>
+
 </head>
 <body class='' >
 <script type="text/javascript">
