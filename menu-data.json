@@ -13,5 +13,5 @@
   { "id": "combo-3bao", "name": "3 Baos (Any Flavors) 三个蒸包（任意口味）", "priceCents": 1565 },
   { "id": "redbean-soup", "name": "Red Bean Soup with Rice Balls 红豆小圆子汤", "priceCents": 575 },
   { "id": "pumpkin-cake", "name": "Pumpkin Millet Cake 南瓜黄米糕（盒）", "priceCents": 975 },
-  { "id": "mungbean-cake", "name": "Mung Bean Cake 手作绿豆糕", "priceCents": 925 }
+  { "id": "mungbean-cake", "name": "Mung Bean Cake 手作绿豆糕（盒）", "priceCents": 925 }
 ]

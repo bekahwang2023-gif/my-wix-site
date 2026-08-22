@@ -62,8 +62,8 @@ module.exports = async (req, res) => {
   }
 
   const menuById = new Map(menuData.map((item) => [item.id, item]));
-  const lineItems = [];
   let subtotalCents = 0;
+  const orderSummaryParts = [];
 
   for (const cartItem of items) {
     const menuItem = cartItem && menuById.get(cartItem.id);
@@ -73,14 +73,7 @@ module.exports = async (req, res) => {
       return;
     }
     subtotalCents += menuItem.priceCents * qty;
-    lineItems.push({
-      quantity: qty,
-      price_data: {
-        currency: 'usd',
-        unit_amount: menuItem.priceCents,
-        product_data: { name: menuItem.name },
-      },
-    });
+    orderSummaryParts.push(`${menuItem.name} x${qty}`);
   }
 
   if (subtotalCents < MIN_ORDER_CENTS) {
@@ -89,14 +82,30 @@ module.exports = async (req, res) => {
   }
 
   const taxCents = Math.round(subtotalCents * MA_TAX_RATE);
-  lineItems.push({
-    quantity: 1,
-    price_data: {
-      currency: 'usd',
-      unit_amount: taxCents,
-      product_data: { name: 'MA Sales Tax (6.25%)' },
+
+  let orderSummary = orderSummaryParts.join(', ');
+  if (orderSummary.length > 480) {
+    orderSummary = `${orderSummary.slice(0, 477)}...`;
+  }
+
+  const lineItems = [
+    {
+      quantity: 1,
+      price_data: {
+        currency: 'usd',
+        unit_amount: subtotalCents,
+        product_data: { name: 'Food Subtotal / 菜品总价' },
+      },
     },
-  });
+    {
+      quantity: 1,
+      price_data: {
+        currency: 'usd',
+        unit_amount: taxCents,
+        product_data: { name: 'MA Sales Tax (6.25%) / 州消费税' },
+      },
+    },
+  ];
 
   const origin = req.headers.origin || `https://${req.headers.host}`;
 
@@ -110,6 +119,7 @@ module.exports = async (req, res) => {
         pickupSlot,
         customerName: name,
         customerPhone: phone,
+        orderItems: orderSummary,
       },
       success_url: `${origin}/order-success.html`,
       cancel_url: `${origin}/order.html?canceled=true`,
