@@ -9,8 +9,8 @@
   { "id": "soy-black", "name": "Black Essence Soy Drink 黑珍豆浆", "priceCents": 595 },
   { "id": "soy-red", "name": "Red Vitality Soy Drink 气血豆浆", "priceCents": 595 },
   { "id": "sago", "name": "Watermelon Coconut Sago 西瓜椰椰西米露", "priceCents": 725 },
-  { "id": "combo-2bao-soy", "name": "2 Classic Bao (Pork or Veg) + Soy Milk 两个蒸包（鲜肉或蔬菜）豆浆组合", "priceCents": 1395 },
-  { "id": "combo-3bao", "name": "3 Bao (Any flavors) 三个蒸包任意口味组合", "priceCents": 1565 },
+  { "id": "combo-2bao-soy", "name": "2 Classic Baos (Pork or Veg) + Soy Milk 两个经典蒸包（鲜肉或蔬菜）+ 豆浆", "priceCents": 1395 },
+  { "id": "combo-3bao", "name": "3 Baos (Any Flavors) 三个蒸包（任意口味）", "priceCents": 1565 },
   { "id": "redbean-soup", "name": "Red Bean Soup with Rice Balls 红豆小圆子汤", "priceCents": 575 },
   { "id": "pumpkin-cake", "name": "Pumpkin Millet Cake 南瓜黄米糕（盒）", "priceCents": 975 },
   { "id": "mungbean-cake", "name": "Mung Bean Cake 手作绿豆糕", "priceCents": 925 }

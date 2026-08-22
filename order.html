@@ -1227,7 +1227,6 @@
 
 <div class="op-summary-bar">
   <div class="op-summary-rows">
-    <div class="op-summary-row"><span>Subtotal</span><span id="op-subtotal">$0.00</span></div>
     <div class="op-summary-row op-summary-row-total"><span>Total</span><span class="op-summary-total" id="op-total">$0.00</span></div>
   </div>
   <div class="op-summary-note">$50.00 subtotal minimum required</div>
@@ -1284,7 +1283,6 @@
 (function () {
   var MIN_ORDER_CENTS = 5000;
   var MIN_LEAD_DAYS = 3;
-  var MA_TAX_RATE = 0.0625;
   var cart = {};
   var menuItems = [];
 
@@ -1301,15 +1299,9 @@
     return total;
   }
 
-  function computeTaxCents(subtotalCents) {
-    return Math.round(subtotalCents * MA_TAX_RATE);
-  }
-
   function renderTotal() {
     var subtotalCents = computeSubtotalCents();
-    var taxCents = computeTaxCents(subtotalCents);
-    document.getElementById('op-subtotal').textContent = formatUsd(subtotalCents);
-    document.getElementById('op-total').textContent = formatUsd(subtotalCents + taxCents);
+    document.getElementById('op-total').textContent = formatUsd(subtotalCents);
   }
 
   function renderMenu() {
