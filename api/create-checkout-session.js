@@ -94,7 +94,7 @@ module.exports = async (req, res) => {
       price_data: {
         currency: 'usd',
         unit_amount: subtotalCents,
-        product_data: { name: 'Food Subtotal / 菜品总价' },
+        product_data: { name: 'Subtotal' },
       },
     },
     {
@@ -102,7 +102,7 @@ module.exports = async (req, res) => {
       price_data: {
         currency: 'usd',
         unit_amount: taxCents,
-        product_data: { name: 'MA Sales Tax (6.25%) / 州消费税' },
+        product_data: { name: 'Sales Tax' },
       },
     },
   ];
