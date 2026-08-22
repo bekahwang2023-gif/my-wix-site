@@ -1,0 +1,17 @@
+[
+  { "id": "pork-bao", "name": "Juicy Pork Bao 鲜肉包", "priceCents": 495 },
+  { "id": "veg-bao", "name": "Bok Choy & Mushroom Bao 青菜蘑菇包", "priceCents": 495 },
+  { "id": "shrimp-bao", "name": "Red Shrimp & Zucchini Bao 大虾西葫芦包", "priceCents": 625 },
+  { "id": "beef-bao", "name": "Braised Beef & Onion Bao 慢炖牛肉洋葱包", "priceCents": 575 },
+  { "id": "mapo-bao", "name": "Spicy Mapo Tofu Bao 麻婆豆腐包", "priceCents": 495 },
+  { "id": "redbean-bao", "name": "Red Bean Bao 红豆包", "priceCents": 425 },
+  { "id": "soy-original", "name": "Silk Original Soy Milk 经典原味豆浆", "priceCents": 475 },
+  { "id": "soy-black", "name": "Black Essence Soy Drink 黑珍豆浆", "priceCents": 595 },
+  { "id": "soy-red", "name": "Red Vitality Soy Drink 气血豆浆", "priceCents": 595 },
+  { "id": "sago", "name": "Watermelon Coconut Sago 西瓜椰椰西米露", "priceCents": 725 },
+  { "id": "combo-2bao-soy", "name": "2 Classic Bao (Pork or Veg) + Soy Milk 两个蒸包（鲜肉或蔬菜）豆浆组合", "priceCents": 1395 },
+  { "id": "combo-3bao", "name": "3 Bao (Any flavors) 三个蒸包任意口味组合", "priceCents": 1565 },
+  { "id": "redbean-soup", "name": "Red Bean Soup with Rice Balls 红豆小圆子汤", "priceCents": 575 },
+  { "id": "pumpkin-cake", "name": "Pumpkin Millet Cake 南瓜黄米糕（盒）", "priceCents": 925 },
+  { "id": "mungbean-cake", "name": "Mung Bean Cake 手作绿豆糕", "priceCents": 975 }
+]
