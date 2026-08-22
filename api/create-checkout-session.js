@@ -4,13 +4,13 @@ const menuData = require('../menu-data.json');
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const PICKUP_SLOTS = [
-  '7:30 AM - 8:30 AM',
-  '11:30 AM - 1:00 PM',
-  '5:00 PM - 6:30 PM',
+  '12:00 PM - 1:00 PM',
+  '5:30 PM - 6:30 PM',
 ];
 
 const MIN_ORDER_CENTS = 5000; // $50.00
 const MIN_LEAD_DAYS = 3;
+const MA_TAX_RATE = 0.0625; // Massachusetts meals/sales tax
 
 function isValidPickupDate(dateStr) {
   if (typeof dateStr !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
@@ -63,7 +63,7 @@ module.exports = async (req, res) => {
 
   const menuById = new Map(menuData.map((item) => [item.id, item]));
   const lineItems = [];
-  let totalCents = 0;
+  let subtotalCents = 0;
 
   for (const cartItem of items) {
     const menuItem = cartItem && menuById.get(cartItem.id);
@@ -72,7 +72,7 @@ module.exports = async (req, res) => {
       res.status(400).json({ error: 'Your cart contains an invalid item.' });
       return;
     }
-    totalCents += menuItem.priceCents * qty;
+    subtotalCents += menuItem.priceCents * qty;
     lineItems.push({
       quantity: qty,
       price_data: {
@@ -83,10 +83,20 @@ module.exports = async (req, res) => {
     });
   }
 
-  if (totalCents < MIN_ORDER_CENTS) {
+  if (subtotalCents < MIN_ORDER_CENTS) {
     res.status(400).json({ error: 'Order minimum is $50.00 before checkout.' });
     return;
   }
+
+  const taxCents = Math.round(subtotalCents * MA_TAX_RATE);
+  lineItems.push({
+    quantity: 1,
+    price_data: {
+      currency: 'usd',
+      unit_amount: taxCents,
+      product_data: { name: 'MA Sales Tax (6.25%)' },
+    },
+  });
 
   const origin = req.headers.origin || `https://${req.headers.host}`;
 
