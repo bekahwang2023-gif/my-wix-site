@@ -15,5 +15,7 @@
   { "id": "mungbean-cake", "name": "Mung Bean Cake", "priceCents": 925 },
   { "id": "sago", "name": "Watermelon Coconut Sago", "priceCents": 775 },
   { "id": "tofu-pudding", "name": "Tofu Pudding", "priceCents": 725 },
-  { "id": "redbean-soup", "name": "Red Bean Soup with Rice Balls", "priceCents": 745 }
+  { "id": "redbean-soup", "name": "Red Bean Soup with Rice Balls", "priceCents": 745 },
+  { "id": "mulberry-black-sesame-balls", "name": "Mulberry Black Sesame Balls", "priceCents": 895 },
+  { "id": "ginger-jujube-paste", "name": "Ginger Jujube Paste", "priceCents": 2495 }
 ]
