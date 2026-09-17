@@ -1972,6 +1972,23 @@
 }
 </style>
 
+<style id="menu-sections-stack-fix">
+/* Wix's restaurant-menu widget JS can misjudge the widget's container width on
+   Vercel (same class of bug as vercel-animation-fix below) and switch the
+   sections list into a multi-column layout instead of the intended single
+   stacked column. Force every menu section to always render as a full-width
+   block, regardless of whatever layout mode the widget JS thinks is active. */
+[data-hook="sections.container"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+}
+[data-hook="section.container"] {
+    display: block !important;
+    width: 100% !important;
+    grid-column: 1 / -1 !important;
+}
+</style>
+
 <style id="vercel-animation-fix">
 /* Wix's scroll-reveal JS (data-motion-enter="done") never fires on Vercel,
    leaving elements paused at the motion-floatIn 0% keyframe (opacity:0) forever.
